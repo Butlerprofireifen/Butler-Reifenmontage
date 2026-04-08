@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butler Profi Reifenmontage | Reifen- und Felgenservice in Muggensturm</title>
+    <meta
+      name="description"
+      content="Butler Profi Reifenmontage & Service - Jörg Mengel in Muggensturm. Premium-Service rund um Reifen und Felgen mit Montage von 10 bis 34 Zoll, Laserwuchten, Runflat- und UHP-Service sowie 3D Achsvermessung."
+    />
+    <meta
+      name="keywords"
+      content="Butler Profi Reifenmontage, Jörg Mengel, Muggensturm, Reifenservice, Felgenservice, Laserwuchten, Runflat, UHP, Butler Aikido 34, Corghi Blue Light, John Bean"
+    />
+    <meta name="theme-color" content="#0a0d12" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Butler Profi Reifenmontage | Reifen- und Felgenservice in Muggensturm" />
+    <meta
+      property="og:description"
+      content="Professioneller Reifen- und Felgenservice mit Montage von 10 bis 34 Zoll, Laserwuchten und 3D-Achsvermessung in Muggensturm."
+    />
+    <meta property="og:image" content="./assets/photo-08.jpg" />
+    <link rel="preload" as="image" href="./assets/logo-butler.png" />
+    <link rel="preload" as="image" href="./assets/photo-08.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Butler Profi Reifenmontage & Service - Jörg Mengel",
+        "description": "Premium-Service rund um Reifen und Felgen mit Montage von 10 bis 34 Zoll, Laserwuchten, Runflat- und UHP-Service sowie 3D-Achsvermessung in Muggensturm.",
+        "telephone": "+49 1511 2709836",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Draisstraße 19E",
+          "postalCode": "76461",
+          "addressLocality": "Muggensturm",
+          "addressCountry": "DE"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "17:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.kleinanzeigen.de/s-anzeige/preiswerte-profi-reifenmontage-bis-34-zoll-inkl-runflat-ab-6-/1419323834-280-8989?utm_source=ekde",
+          "https://www.google.com/maps/search/?api=1&query=Draisstra%C3%9Fe+19E,+76461+Muggensturm"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <nav class="main-nav" aria-label="Navigation">
+          <a href="#services" data-i18n="navServices">Leistungen</a>
+          <a href="#prices" data-i18n="navPrices">Preise</a>
+          <a href="#reviews" data-i18n="navReviews">Vorteile</a>
+          <a href="#location" data-i18n="navLocation">Standort</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn is-active" type="button" data-lang="de">DE</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="eyebrow">Premium-Service für Reifen & Felgen</p>
+            <h1>Butler Profi<br><em>Reifenmontage</em></h1>
+            <p class="hero-text" data-i18n="heroText">
+              Mit modernster High-End-Technik und jahrzehntelanger Erfahrung bieten wir
+              zuverlässigen, fairen und professionellen Service rund um Reifen und Felgen.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+4915112709836" data-i18n="callBtn">Jetzt anrufen</a>
+              <a
+                class="btn btn-secondary"
+                href="https://www.google.com/maps/search/?api=1&query=Draisstra%C3%9Fe+19E,+76461+Muggensturm"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="routeBtn"
+              >Route starten</a>
+            </div>
+            <div class="hero-stats">
+              <article>
+                <strong>10–34"</strong>
+                <span data-i18n="stat1">Montage von 10 bis 34 Zoll</span>
+              </article>
+              <article>
+                <strong>Runflat</strong>
+                <span data-i18n="stat2">Runflat- & UHP-Service</span>
+              </article>
+              <article>
+                <strong>10–17</strong>
+                <span data-i18n="stat3">Mo–Fr 10–17 Uhr</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="carousel">
+              <div class="carousel-track" id="carousel-track"></div>
+              <div class="carousel-ui">
+                <div class="carousel-dots" id="carousel-dots"></div>
+                <div class="carousel-nav">
+                  <button id="prev-slide" type="button" aria-label="Previous slide">&#8592;</button>
+                  <button id="next-slide" type="button" aria-label="Next slide">&#8594;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Tech Strip ─────────────────────────────────────────────────── -->
+      <section class="section">
+        <div class="container">
+          <div class="feature-strip">
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <span class="tag" data-i18n="feature1Label">Montagemaschine</span>
+              <strong>Butler Aikido 34</strong>
+              <p data-i18n="feature1Text">High-End-Montagemaschine, die Beschädigungen an Felgen praktisch ausschließt.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <span class="tag" data-i18n="feature2Label">Auswuchten</span>
+              <strong>Corghi Blue Light</strong>
+              <p data-i18n="feature2Text">Extrem feine und genaue Laser-Auswuchtung für perfekte Laufruhe.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12h20M12 2v20"/><path d="M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+              </div>
+              <span class="tag" data-i18n="feature3Label">Achsvermessung</span>
+              <strong>John Bean 3D</strong>
+              <p data-i18n="feature3Text">3D-Achsvermessung mit John-Bean-Achsmessstand für präzise Fahrwerkswerte.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Services ───────────────────────────────────────────────────── -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="servicesEyebrow">Leistungsübersicht</p>
+            <h2 data-i18n="servicesTitle">Reifenservice für jede Saison</h2>
+            <p data-i18n="servicesText">
+              Radwechsel, Laserwuchten und Reifenmontage für PKW, Motorräder und Mopeds
+              sowie An- und Verkauf, Internetreifen-Service und Altreifenentsorgung.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <article class="info-card reveal">
+              <div class="card-num">01</div>
+              <h3 data-i18n="service1Title">Radwechsel & Montage</h3>
+              <p data-i18n="service1Text">Reifenmontage in Größen von 10 bis 34 Zoll inklusive Laserwuchten.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-num">02</div>
+              <h3 data-i18n="service2Title">Runflat & UHP</h3>
+              <p data-i18n="service2Text">Fachgerechte Montage von Runflat- und UHP-Reifen zu jeder Jahreszeit.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-num">03</div>
+              <h3 data-i18n="service3Title">PKW, Motorrad & Moped</h3>
+              <p data-i18n="service3Text">Reifenmontage für alle Fahrzeugarten einschließlich PKW, Motorräder und Mopeds.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-num">04</div>
+              <h3 data-i18n="service4Title">Neu-, Gebraucht- & Internetreifen</h3>
+              <p data-i18n="service4Text">Große Auswahl an gebrauchten Sommer- und Winterreifen sowie Montage auch für online gekaufte Reifen und Felgen.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-num">05</div>
+              <h3 data-i18n="service5Title">3D Achsvermessung</h3>
+              <p data-i18n="service5Text">Präzise Vermessung mit John-Bean-Achsmessstand ab 99,99 €.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="card-num">06</div>
+              <h3 data-i18n="service6Title">Ankauf, Verkauf & Entsorgung</h3>
+              <p data-i18n="service6Text">Neue und gebrauchte Reifen und Felgen zu attraktiven Konditionen plus umweltgerechte Altreifenentsorgung.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Prices ─────────────────────────────────────────────────────── -->
+      <section class="section" id="prices">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="pricesEyebrow">Preisübersicht</p>
+            <h2 data-i18n="pricesTitle">Aktuelle Preise auf einen Blick</h2>
+            <p data-i18n="pricesText">Alle Preise verstehen sich inklusive der gesetzlichen Mehrwertsteuer.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="pricing-card reveal">
+              <h3 data-i18n="priceCol1">Montage PKW</h3>
+              <ul>
+                <li><span>Standardreifen bis 16 Zoll</span><strong>14,50 €</strong></li>
+                <li><span>Niederquerschnitt / SUV / LLKW / Standard bis 17 Zoll</span><strong>16,00 €</strong></li>
+                <li><span>18 & 19 Zoll</span><strong>18,00 €</strong></li>
+                <li><span>20 Zoll</span><strong>20,00 €</strong></li>
+                <li><span>über 20 Zoll</span><strong>24,00 €</strong></li>
+              </ul>
+            </article>
+            <article class="pricing-card pricing-card--featured reveal">
+              <h3 data-i18n="priceCol2">Zusatzleistungen</h3>
+              <ul>
+                <li><span data-i18n="priceRunflat">Runflat Aufpreis</span><strong>4,00 €</strong></li>
+                <li><span data-i18n="priceBalance">Auswuchten ohne Montage</span><strong>5,00 €</strong></li>
+                <li><span data-i18n="priceDemount">Demontage ohne Montage</span><strong>5,50 €</strong></li>
+                <li><span data-i18n="priceInternet">Aufpreis für nicht bei uns gekaufte Reifen/Felgen</span><strong>4,00 €</strong></li>
+                <li><span data-i18n="priceAlignment">Achsvermessung</span><strong>ab 99,99 €</strong></li>
+              </ul>
+            </article>
+            <article class="pricing-card reveal">
+              <h3 data-i18n="priceCol3">Radwechsel, Zweirad & Entsorgung</h3>
+              <ul>
+                <li><span data-i18n="priceSet1">Komplettradwechsel PKW</span><strong>22,00 €</strong></li>
+                <li><span data-i18n="priceSet2">Komplettradwechsel SUV</span><strong>24,00 €</strong></li>
+                <li><span data-i18n="priceSet3">PKW inkl. Auswuchten</span><strong>32,00 €</strong></li>
+                <li><span data-i18n="priceSet4">SUV inkl. Auswuchten</span><strong>34,00 €</strong></li>
+                <li><span data-i18n="priceSet5">Motorrad/Moped inkl. statischem Auswuchten</span><strong>19,50 €</strong></li>
+                <li><span data-i18n="priceSet6">Rollerreifen</span><strong>6,00 €</strong></li>
+                <li><span data-i18n="priceDispose1">Altreifenentsorgung PKW</span><strong>5,00 €</strong></li>
+                <li><span data-i18n="priceDispose2">Altreifenentsorgung SUV/Runflat</span><strong>5,50 €</strong></li>
+                <li><span data-i18n="priceDispose3">Altreifenentsorgung LLKW</span><strong>5,50 €</strong></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Gallery Slider ─────────────────────────────────────────────── -->
+      <section class="section gallery-section">
+        <div class="container">
+          <div class="gallery-header reveal">
+            <div>
+              <p class="eyebrow" data-i18n="galleryEyebrow">Werkstatt Galerie</p>
+              <h2 data-i18n="galleryTitle">Einblick in unsere Werkstatt</h2>
+            </div>
+            <div class="gallery-controls">
+              <span class="gallery-counter" id="gallery-counter">1 – 3 / 42</span>
+              <button class="gallery-btn" id="gallery-prev" type="button" aria-label="Zurück">&#8592;</button>
+              <button class="gallery-btn" id="gallery-next" type="button" aria-label="Weiter">&#8594;</button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-slider-wrap">
+          <div class="gallery-slider" id="gallery-slider"></div>
+        </div>
+      </section>
+
+      <!-- ── Reviews ────────────────────────────────────────────────────── -->
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="reviewsEyebrow">Servicevorteile</p>
+            <h2 data-i18n="reviewsTitle">Warum Kunden zu Butler kommen</h2>
+          </div>
+          <div class="review-top reveal">
+            <article>
+              <strong>10–34"</strong>
+              <span data-i18n="reviewTop1">Montage von 10 bis 34 Zoll</span>
+            </article>
+            <article>
+              <strong>Aikido 34</strong>
+              <span data-i18n="reviewTop2">Butler Aikido 34</span>
+            </article>
+            <article>
+              <strong>John Bean</strong>
+              <span data-i18n="reviewTop3">3D Achsvermessung</span>
+            </article>
+          </div>
+          <div class="review-cta reveal">
+            <a
+              class="btn btn-secondary"
+              href="https://www.google.com/search?client=tablet-android-samsung-ss&sca_esv=583047109&q=Butler+Profi+Reifenmontage+-+J%C3%B6rg+Mengel&ludocid=6467422411187546437&ibp=gwp;0,7&lsig=AB86z5Ukvc_mYcGs63w3760nKti_&kgs=0fa82af98b252540#lpg=cid:CgIgAQ%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="reviewsLink"
+            >Alle Google-Bewertungen lesen &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Languages ──────────────────────────────────────────────────── -->
+      <section class="lang-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Wir sprechen Ihre Sprache</p>
+            <h2>2 Sprachen —<br>ein Ansprechpartner</h2>
+          </div>
+          <div class="lang-grid">
+            <article class="lang-card reveal">
+              <span class="flag">🇩🇪</span>
+              <h4>Deutsch</h4>
+              <p>Premium-Service rund um Reifen und Felgen mit Montage von 10 bis 34 Zoll, Laserwuchten und 3D-Achsvermessung. Mo–Fr 10–17 Uhr.</p>
+            </article>
+            <article class="lang-card reveal">
+              <span class="flag">🇬🇧</span>
+              <h4>English</h4>
+              <p>Premium tire and wheel service with fitting from 10 to 34 inches, laser balancing and 3D alignment. Mon–Fri 10–17.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="location">
+      <!-- Map — JS инжектирует iframe или плейсхолдер -->
+      <div class="footer-map" id="footer-map"></div>
+      <!-- Contact + links -->
+      <div class="container footer-main">
+        <div class="footer-contact">
+          <strong>Butler Profi Reifenmontage & Service — Jörg Mengel</strong>
+          <ul>
+            <li>
+              <span data-i18n="contactAddress">Adresse</span>
+              <span>Draisstraße 19E, 76461 Muggensturm</span>
+            </li>
+            <li>
+              <span data-i18n="contactPhone">Telefon</span>
+              <a href="tel:+4915112709836">0151 / 12709836</a>
+            </li>
+            <li>
+              <span data-i18n="contactHours">Öffnungszeiten</span>
+              <span data-i18n="contactHoursValue">Montag bis Freitag 10:00 – 17:00, Samstag geschlossen</span>
+            </li>
+            <li>
+              <span data-i18n="contactVehicles">Fahrzeuge</span>
+              <span data-i18n="contactVehiclesValue">PKW, SUV, LLKW, Motorrad, Moped</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <a href="tel:+4915112709836">0151 / 12709836</a>
+          <a href="https://www.google.com/search?client=tablet-android-samsung-ss&sca_esv=583047109&q=Butler+Profi+Reifenmontage+-+J%C3%B6rg+Mengel&ludocid=6467422411187546437&ibp=gwp;0,7&lsig=AB86z5Ukvc_mYcGs63w3760nKti_&kgs=0fa82af98b252540#lpg=cid:CgIgAQ%3D%3D" target="_blank" rel="noreferrer" data-i18n="reviewsLink">Google-Bewertungen</a>
+          <a href="https://www.kleinanzeigen.de/s-anzeige/preiswerte-profi-reifenmontage-bis-34-zoll-inkl-runflat-ab-6-/1419323834-280-8989?utm_source=ekde" target="_blank" rel="noreferrer">Kleinanzeigen</a>
+          <button class="footer-legal-btn" id="open-impressum" data-i18n="navImpressum">Impressum</button>
+          <button class="footer-legal-btn" id="open-datenschutz" data-i18n="navDatenschutz">Datenschutz</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ── Cookie Banner ────────────────────────────────────────────────── -->
+    <div class="cookie-banner" id="cookie-banner" hidden>
+      <div class="cookie-inner">
+        <div class="cookie-body">
+          <div class="cookie-mark" aria-hidden="true">🍪</div>
+          <p class="cookie-title" data-i18n="cookieTitle">Datenschutzhinweis</p>
+          <p class="cookie-text" data-i18n="cookieText">
+            Wählen Sie, welche externen Dienste Sie erlauben möchten. Weitere Infos in unserer Datenschutzerklärung.
+          </p>
+          <button class="cookie-link" id="open-datenschutz-cookie" data-i18n="cookieDsLink">Datenschutzerklärung lesen</button>
+
+          <div class="cookie-options">
+            <label class="cookie-option" for="consent-fonts">
+              <input type="checkbox" id="consent-fonts" />
+              <span class="cookie-option-box" aria-hidden="true"></span>
+              <span class="cookie-option-copy">
+                <strong data-i18n="cookieFontsTitle">Google Fonts</strong>
+                <span data-i18n="cookieFontsText">Schriftarten von Google — überträgt Ihre IP-Adresse an Google-Server in den USA.</span>
+              </span>
+            </label>
+
+            <label class="cookie-option" for="consent-maps">
+              <input type="checkbox" id="consent-maps" />
+              <span class="cookie-option-box" aria-hidden="true"></span>
+              <span class="cookie-option-copy">
+                <strong data-i18n="cookieMapsTitle">Google Maps</strong>
+                <span data-i18n="cookieMapsText">Interaktive Karte von Google — überträgt Ihre IP-Adresse an Google-Server in den USA.</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="cookie-actions">
+          <button class="btn btn-primary" id="cookie-save" data-i18n="cookieSave">Auswahl speichern</button>
+          <button class="btn btn-secondary" id="cookie-accept" data-i18n="cookieAcceptAll">Alle akzeptieren</button>
+          <button class="btn btn-ghost cookie-actions-full" id="cookie-decline" data-i18n="cookieDeclineAll">Alle ablehnen</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Impressum Modal ──────────────────────────────────────────────── -->
+    <div class="modal-overlay" id="impressum-overlay" hidden role="dialog" aria-modal="true" aria-label="Impressum">
+      <div class="modal-box">
+        <button class="modal-close" id="close-impressum" aria-label="Schließen">✕</button>
+        <div class="modal-content">
+          <h2>Impressum</h2>
+          <p class="modal-eyebrow">Angaben gemäß § 5 DDG</p>
+
+          <p>Butler Profi Reifenmontage &amp; Service - Jörg Mengel<br>
+          Draisstr. 19E<br>
+          76461 Muggensturm</p>
+
+          <p><strong>Vertreten durch:</strong><br>
+          Jörg Mengel</p>
+
+          <h3>Kontakt</h3>
+          <p>Telefon: <a href="tel:+4915112709836">0151-12709836</a><br>
+          E-Mail: <a href="mailto:mengel-joerg@web.de">mengel-joerg@web.de</a></p>
+
+          <h3>Umsatzsteuer-ID</h3>
+          <p>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE320434007</p>
+
+          <h3>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h3>
+          <p>Wir nehmen an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil. Zuständig ist die Universalschlichtungsstelle des Zentrums für Schlichtung e.V., Straßburger Straße 8, 77694 Kehl am Rhein, Website: <a href="https://www.verbraucher-schlichter.de" target="_blank" rel="noreferrer">www.verbraucher-schlichter.de</a>.</p>
+          <p>Plattform der EU-Kommission zur Online-Streitbeilegung: <a href="https://www.ec.europa.eu/consumers/odr" target="_blank" rel="noreferrer">https://www.ec.europa.eu/consumers/odr</a></p>
+
+          <h3>Haftungsausschluss</h3>
+          <h4>Haftung für Inhalte</h4>
+          <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+
+          <h4>Haftung für Links</h4>
+          <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+
+          <h4>Urheberrecht</h4>
+          <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Datenschutz Modal ────────────────────────────────────────────── -->
+    <div class="modal-overlay" id="datenschutz-overlay" hidden role="dialog" aria-modal="true" aria-label="Datenschutzerklärung">
+      <div class="modal-box">
+        <button class="modal-close" id="close-datenschutz" aria-label="Schließen">✕</button>
+        <div class="modal-content">
+          <h2>Datenschutzerklärung</h2>
+
+          <h3>1. Datenschutz auf einen Blick</h3>
+          <h4>Allgemeine Hinweise</h4>
+          <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+          <h4>Datenerfassung auf dieser Website</h4>
+          <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten finden Sie im Abschnitt „Hinweis zur verantwortlichen Stelle".</p>
+          <p>Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst (z. B. Internetbrowser, Betriebssystem, Uhrzeit des Seitenaufrufs).</p>
+
+          <h4>Ihre Rechte</h4>
+          <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Datenübertragbarkeit. Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+
+          <h3>2. Hosting</h3>
+          <p>Diese Website wird extern gehostet bei:<br>
+          GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.<br>
+          Das externe Hosting erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+          <h3>3. Allgemeine Hinweise und Pflichtinformationen</h3>
+          <h4>Hinweis zur verantwortlichen Stelle</h4>
+          <p>Butler Profi Reifenmontage &amp; Service<br>
+          Jörg Mengel<br>
+          Draisstraße 19E, 76461 Muggensturm<br>
+          Telefon: <a href="tel:+4915112709836">+49 1511 2709836</a><br>
+          E-Mail: <a href="mailto:mengel-joerg@web.de">mengel-joerg@web.de</a></p>
+
+          <h4>Speicherdauer</h4>
+          <p>Ihre personenbezogenen Daten verbleiben bei uns, bis der Zweck für die Datenverarbeitung entfällt oder Sie ein berechtigtes Löschersuchen geltend machen.</p>
+
+          <h4>SSL- bzw. TLS-Verschlüsselung</h4>
+          <p>Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie am „https://" und dem Schloss-Symbol in der Browserzeile.</p>
+
+          <h3>4. Datenerfassung auf dieser Website</h3>
+          <h4>Cookies</h4>
+          <p>Diese Website verwendet technisch notwendige Cookies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Soweit eine Einwilligung abgefragt wurde, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar.</p>
+
+          <h4>Anfrage per Telefon</h4>
+          <p>Wenn Sie uns per Telefon kontaktieren, wird Ihre Anfrage inklusive personenbezogener Daten zum Zwecke der Bearbeitung gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+          <h3>5. Plugins und Tools</h3>
+          <h4>Google Fonts</h4>
+          <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Google Fonts von Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Dabei wird Ihre IP-Adresse an Google-Server übertragen. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (nach Einwilligung). Die Einwilligung ist jederzeit widerrufbar. Google verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework. Weitere Infos: <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">policies.google.com/privacy</a></p>
+
+          <h4>Google Maps</h4>
+          <p>Diese Seite nutzt den Kartendienst Google Maps von Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Zur Nutzung ist es notwendig, Ihre IP-Adresse zu speichern und an Google-Server in die USA zu übertragen. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (nach Einwilligung). Die Einwilligung ist jederzeit widerrufbar. Weitere Infos: <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">policies.google.com/privacy</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
