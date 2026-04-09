@@ -198,12 +198,12 @@ const translations = {
 /* ── Hero Carousel ──────────────────────────────────────────────────────────── */
 const slides = [
   { image: "20250424_094202.jpg", title: "Außenansicht",   text: "Butler Profi Reifenmontage — Ihr Spezialist in Muggensturm" },
+  { image: "IMG_1989.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
   { image: "IMG_4643.jpg",        title: "Laserwuchten",   text: "Corghi Blue Light — Laser-Auswuchtung für perfekte Laufruhe" },
   { image: "IMG_4636.jpg",        title: "Montage",        text: "Butler Aikido 34 — Reifenmontage von 10 bis 34 Zoll" },
   { image: "IMG_4329.jpg",        title: "Werkstatt",      text: "Moderne Werkstatt mit High-End-Technik" },
   { image: "IMG_4651.jpg",        title: "Büro & Empfang", text: "Moderner Empfangsbereich — Sie sind bei uns gut aufgehoben" },
   { image: "IMG_4656.jpg",        title: "Gebrauchtreifen", text: "Große Auswahl an Gebrauchtreifen direkt aus dem Lager" },
-  { image: "IMG_1989.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
 ];
 
 /* ── Gallery images ─────────────────────────────────────────────────────────── */
@@ -622,6 +622,26 @@ function initModals() {
     }
   });
 }
+
+/* ── Review dates ───────────────────────────────────────────────────────────── */
+function formatRelativeDate(dateStr) {
+  const past = new Date(dateStr);
+  const now  = new Date();
+  const diffMs   = now - past;
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  const diffWeeks  = Math.floor(diffDays / 7);
+  const diffMonths = Math.floor(diffDays / 30);
+  const diffYears  = Math.floor(diffDays / 365);
+
+  if (diffDays < 7)    return diffDays <= 1 ? "gestern" : `vor ${diffDays} Tagen`;
+  if (diffWeeks < 5)   return diffWeeks === 1 ? "vor einer Woche" : `vor ${diffWeeks} Wochen`;
+  if (diffMonths < 12) return diffMonths === 1 ? "vor einem Monat" : `vor ${diffMonths} Monaten`;
+  return diffYears === 1 ? "vor einem Jahr" : `vor ${diffYears} Jahren`;
+}
+
+document.querySelectorAll('[data-date]').forEach(el => {
+  el.textContent = formatRelativeDate(el.dataset.date);
+});
 
 /* ── Init ───────────────────────────────────────────────────────────────────── */
 renderCarousel();
