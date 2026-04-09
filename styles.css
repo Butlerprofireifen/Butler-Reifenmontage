@@ -304,7 +304,13 @@ h1 em {
 
 .slide { min-width: 100%; height: 100%; position: relative; }
 
-.slide img { width: 100%; height: 100%; object-fit: contain; background: #050505; }
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  background: #050505;
+}
 
 .slide::after {
   content: "";
@@ -629,9 +635,12 @@ h1 em {
 .gallery-slide {
   flex: 0 0 calc((100% - 28px) / 3);
   aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-radius: var(--radius-xl);
-  background: rgba(255, 255, 255, .03);
+  background: #0b0b0c;
   border: 1px solid var(--border);
   transition: border-color 220ms, transform 220ms;
 }
@@ -640,7 +649,8 @@ h1 em {
 .gallery-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
