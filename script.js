@@ -40,6 +40,8 @@ const translations = {
     service8Text: "Fachgerechter Motorölwechsel inkl. Ölfilterwechsel — schnell und zuverlässig für alle Fahrzeugtypen.",
     service9Title: "Klimaanlagen-Service",
     service9Text: "Befüllung, Prüfung und Wartung Ihrer Klimaanlage für angenehmes Fahren zu jeder Jahreszeit.",
+    service10Title: "Felgen Verkauf & Alufelgen-Aufbereitung",
+    service10Text: "Verkauf von neuen und gebrauchten Felgen sowie professionelle Aufbereitung und Politur von Alufelgen — für ein makelloses Erscheinungsbild.",
     pricesEyebrow: "Preisübersicht",
     pricesTitle: "Aktuelle Preise auf einen Blick",
     pricesText: "Alle Preise verstehen sich inklusive der gesetzlichen Mehrwertsteuer.",
@@ -137,6 +139,8 @@ const translations = {
     service8Text: "Professional engine oil change including oil filter — fast and reliable for all vehicle types.",
     service9Title: "Air conditioning service",
     service9Text: "Refilling, testing and maintenance of your air conditioning for comfortable driving in any season.",
+    service10Title: "Wheel sales & alloy wheel restoration",
+    service10Text: "Sale of new and used wheels plus professional cleaning, polishing and restoration of alloy wheels — for a flawless appearance.",
     pricesEyebrow: "Price overview",
     pricesTitle: "Current prices at a glance",
     pricesText: "All prices include statutory VAT.",
@@ -198,7 +202,7 @@ const translations = {
 /* ── Hero Carousel ──────────────────────────────────────────────────────────── */
 const slides = [
   { image: "20250424_094202.jpg", title: "Außenansicht",   text: "Butler Profi Reifenmontage — Ihr Spezialist in Muggensturm" },
-  { image: "IMG_1989.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
+  { image: "IMG_1994.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte", position: "center 30%" },
   { image: "IMG_4643.jpg",        title: "Laserwuchten",   text: "Corghi Blue Light — Laser-Auswuchtung für perfekte Laufruhe" },
   { image: "IMG_4636.jpg",        title: "Montage",        text: "Butler Aikido 34 — Reifenmontage von 10 bis 34 Zoll" },
   { image: "IMG_4329.jpg",        title: "Werkstatt",      text: "Moderne Werkstatt mit High-End-Technik" },
@@ -255,7 +259,7 @@ let intervalId;
 function renderCarousel() {
   carouselTrack.innerHTML = slides.map((slide) => `
     <article class="slide">
-      <img src="assets/${slide.image}" alt="${slide.title}" loading="eager" />
+      <img src="assets/${slide.image}" alt="${slide.title}" loading="eager" style="${slide.position ? `object-position:${slide.position}` : ''}" />
       <div class="slide-caption">
         <strong>${slide.title}</strong>
         <span>${slide.text}</span>
