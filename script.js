@@ -34,6 +34,12 @@ const translations = {
     service5Text: "Präzise Vermessung mit John-Bean-Achsmessstand ab 99,99 €.",
     service6Title: "Ankauf, Verkauf & Entsorgung",
     service6Text: "Neue und gebrauchte Reifen und Felgen zu attraktiven Konditionen plus umweltgerechte Altreifenentsorgung.",
+    service7Title: "Reifen- & Rädereinlagerung",
+    service7Text: "Sichere und professionelle Einlagerung Ihrer Sommer- und Winterreifen in unserem Reifenlager.",
+    service8Title: "Öl- & Ölfilterwechsel",
+    service8Text: "Fachgerechter Motorölwechsel inkl. Ölfilterwechsel — schnell und zuverlässig für alle Fahrzeugtypen.",
+    service9Title: "Klimaanlagen-Service",
+    service9Text: "Befüllung, Prüfung und Wartung Ihrer Klimaanlage für angenehmes Fahren zu jeder Jahreszeit.",
     pricesEyebrow: "Preisübersicht",
     pricesTitle: "Aktuelle Preise auf einen Blick",
     pricesText: "Alle Preise verstehen sich inklusive der gesetzlichen Mehrwertsteuer.",
@@ -125,6 +131,12 @@ const translations = {
     service5Text: "Precise alignment with John Bean equipment from 99.99 euros.",
     service6Title: "Buying, selling & disposal",
     service6Text: "Attractive conditions for new and used tires and wheels plus proper old-tire disposal.",
+    service7Title: "Tire & wheel storage",
+    service7Text: "Safe and professional storage of your summer and winter tires in our tire warehouse.",
+    service8Title: "Oil & oil filter change",
+    service8Text: "Professional engine oil change including oil filter — fast and reliable for all vehicle types.",
+    service9Title: "Air conditioning service",
+    service9Text: "Refilling, testing and maintenance of your air conditioning for comfortable driving in any season.",
     pricesEyebrow: "Price overview",
     pricesTitle: "Current prices at a glance",
     pricesText: "All prices include statutory VAT.",
@@ -185,18 +197,44 @@ const translations = {
 
 /* ── Hero Carousel ──────────────────────────────────────────────────────────── */
 const slides = [
-  { image: "photo-08.jpg", title: "Werkstatt", text: "Premium-Service mit moderner Technik und viel Erfahrung" },
-  { image: "photo-20.jpg", title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
-  { image: "photo-11.jpg", title: "Montage", text: "Reifenmontage von 10 bis 34 Zoll inkl. Runflat und UHP" },
-  { image: "photo-30.jpg", title: "Reifen & Felgen", text: "Neue und gebrauchte Reifen und Felgen zu attraktiven Konditionen" },
-  { image: "photo-36.jpg", title: "Laserwuchten", text: "Corghi Blue Light für extrem feine und genaue Auswuchtung" }
+  { image: "20250424_094202.jpg", title: "Außenansicht", text: "Butler Profi Reifenmontage — Ihr Spezialist in Muggensturm" },
+  { image: "IMG_4329.jpg", title: "Werkstatt", text: "Premium-Service mit moderner Technik und viel Erfahrung" },
+  { image: "IMG_1989.jpg", title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
+  { image: "IMG_4636.jpg", title: "Montage", text: "Reifenmontage von 10 bis 34 Zoll inkl. Runflat und UHP" },
+  { image: "IMG_4656.jpg", title: "Reifen & Felgen", text: "Große Auswahl an neuen und gebrauchten Reifen und Felgen" },
+  { image: "IMG_4643.jpg", title: "Laserwuchten", text: "Corghi Blue Light für extrem feine und genaue Auswuchtung" },
+  { image: "IMG_4651.jpg", title: "Büro & Empfang", text: "Moderner Empfangsbereich — Sie sind bei uns gut aufgehoben" }
 ];
 
 /* ── Gallery images ─────────────────────────────────────────────────────────── */
-const galleryImages = Array.from({ length: 42 }, (_, i) => ({
-  src: `photo-${String(i + 1).padStart(2, "0")}.jpg`,
-  alt: `Butler Werkstatt Foto ${String(i + 1).padStart(2, "0")}`
-}));
+const newPhotos = [
+  { src: "20250424_094202.jpg",    alt: "Butler Profi Reifenmontage Außenansicht" },
+  { src: "20250425_155347.jpg",    alt: "Butler Profi Reifenmontage mit Audi RS6" },
+  { src: "20250425_155510.jpg",    alt: "Butler Profi Reifenmontage Einfahrt" },
+  { src: "20250903_171416.jpg",    alt: "Mercedes mit BBS Felgen vor der Werkstatt" },
+  { src: "20250903_171408.jpg",    alt: "Mercedes BBS Felgen Nahaufnahme" },
+  { src: "IMG_4329.jpg",           alt: "Werkstatt Innenansicht" },
+  { src: "IMG_4651.jpg",           alt: "Büro und Empfangsbereich" },
+  { src: "IMG_4654.jpg",           alt: "Blue Light und Montagemaschine" },
+  { src: "IMG_4636.jpg",           alt: "Butler Aikido 34 Montagemaschine" },
+  { src: "IMG_4640.jpg",           alt: "Corghi Blue Light Auswuchtmaschine" },
+  { src: "IMG_4643.jpg",           alt: "Corghi Blue Light Laserwuchten" },
+  { src: "IMG_1989.jpg",           alt: "Porsche Panamera 3D Achsvermessung" },
+  { src: "IMG_1994.jpg",           alt: "3D Achsvermessung Werkstatt" },
+  { src: "IMG_4656.jpg",           alt: "Reifenlager Gebrauchtreifen" },
+  { src: "IMG_4658.jpg",           alt: "Reifenlager Einlagerung" },
+  { src: "20250903_155357.jpg",    alt: "Felge auf Auswuchtmaschine" },
+  { src: "20250903_155843.jpg",    alt: "Reifenmontage in Aktion" },
+  { src: "20251029_171516(1).jpg", alt: "KFZ-Service Schild Butler Profi" },
+];
+
+const galleryImages = [
+  ...newPhotos,
+  ...Array.from({ length: 42 }, (_, i) => ({
+    src: `photo-${String(i + 1).padStart(2, "0")}.jpg`,
+    alt: `Butler Werkstatt Foto ${String(i + 1).padStart(2, "0")}`
+  }))
+];
 
 /* ── DOM refs ───────────────────────────────────────────────────────────────── */
 const carouselTrack   = document.getElementById("carousel-track");
