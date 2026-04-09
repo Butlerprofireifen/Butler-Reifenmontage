@@ -197,32 +197,41 @@ const translations = {
 
 /* ── Hero Carousel ──────────────────────────────────────────────────────────── */
 const slides = [
-  { folder: "assets", image: "20250424_094202.jpg", title: "Außenansicht", text: "Butler Profi Reifenmontage — Ihr Spezialist in Muggensturm" },
-  { folder: "assets", image: "IMG_4654.jpg", title: "Laserwuchten", text: "Corghi Blue Light und Montagemaschine mit moderner High-End-Technik" },
-  { folder: "assets", image: "IMG_4329.jpg", title: "Werkstatt", text: "Premium-Service mit moderner Technik und viel Erfahrung" },
-  { folder: "assets", image: "IMG_4651.jpg", title: "Büro & Empfang", text: "Moderner Empfangsbereich — Sie sind bei uns gut aufgehoben" },
-  { folder: "assets", image: "IMG_1989.jpg", title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
-  { folder: "assets", image: "IMG_4656.jpg", title: "Gebrauchtreifen", text: "Große Auswahl an Gebrauchtreifen direkt aus dem Lager" },
-  { folder: "assets", image: "20250903_155843.jpg", title: "Montage", text: "Reifenmontage von 10 bis 34 Zoll inkl. Runflat und UHP" }
+  { image: "20250424_094202.jpg", title: "Außenansicht",   text: "Butler Profi Reifenmontage — Ihr Spezialist in Muggensturm" },
+  { image: "IMG_4643.jpg",        title: "Laserwuchten",   text: "Corghi Blue Light — Laser-Auswuchtung für perfekte Laufruhe" },
+  { image: "IMG_4636.jpg",        title: "Montage",        text: "Butler Aikido 34 — Reifenmontage von 10 bis 34 Zoll" },
+  { image: "IMG_4329.jpg",        title: "Werkstatt",      text: "Moderne Werkstatt mit High-End-Technik" },
+  { image: "IMG_4651.jpg",        title: "Büro & Empfang", text: "Moderner Empfangsbereich — Sie sind bei uns gut aufgehoben" },
+  { image: "IMG_4656.jpg",        title: "Gebrauchtreifen", text: "Große Auswahl an Gebrauchtreifen direkt aus dem Lager" },
+  { image: "IMG_1989.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
 ];
 
 /* ── Gallery images ─────────────────────────────────────────────────────────── */
-const newPhotos = [
-  { folder: "assets", src: "20250424_094202.jpg", alt: "Butler Profi Reifenmontage Außenansicht" },
-  { folder: "Archiv", src: "20250425_155510.jpg", alt: "Butler Profi Reifenmontage Einfahrt" },
-  { folder: "assets", src: "IMG_4654.jpg", alt: "Laserwuchten und Montagemaschine" },
-  { folder: "assets", src: "IMG_4329.jpg", alt: "Werkstatt Innenansicht" },
-  { folder: "assets", src: "IMG_4651.jpg", alt: "Büro und Empfangsbereich" },
-  { folder: "assets", src: "IMG_1989.jpg", alt: "Porsche Panamera 3D Achsvermessung" },
-  { folder: "assets", src: "IMG_1994.jpg", alt: "3D Achsvermessung Werkstatt" },
-  { folder: "Archiv", src: "20250425_155347.jpg", alt: "Butler Profi Reifenmontage mit Audi RS6" },
-  { folder: "assets", src: "20250903_155357.jpg", alt: "Felge auf Auswuchtmaschine" },
-  { folder: "assets", src: "20250903_155843.jpg", alt: "Reifenmontage in Aktion" },
-  { folder: "assets", src: "20250903_171416.jpg", alt: "Mercedes mit BBS Felgen vor der Werkstatt" },
-  { folder: "assets", src: "20250903_171408.jpg", alt: "Mercedes BBS Felgen Nahaufnahme" },
-  { folder: "assets", src: "20251029_171525.jpg", alt: "Außenbereich und Werkstattfassade" },
+const galleryImages = [
+  { src: "20250424_094202.jpg",    alt: "Butler Profi Reifenmontage Außenansicht" },
+  { src: "20250425_155347.jpg",    alt: "Butler Profi Reifenmontage mit Audi RS6" },
+  { src: "20250425_155510.jpg",    alt: "Butler Profi Reifenmontage Einfahrt" },
+  { src: "20250903_171416.jpg",    alt: "Mercedes mit BBS Felgen vor der Werkstatt" },
+  { src: "20250903_171408.jpg",    alt: "Mercedes BBS Felgen Nahaufnahme" },
+  { src: "IMG_4329.jpg",           alt: "Werkstatt Innenansicht" },
+  { src: "IMG_4651.jpg",           alt: "Büro und Empfangsbereich" },
+  { src: "IMG_4654.jpg",           alt: "Blue Light und Montagemaschine" },
+  { src: "IMG_4643.jpg",           alt: "Corghi Blue Light Laserwuchten" },
+  { src: "IMG_4640.jpg",           alt: "Corghi Blue Light Auswuchtmaschine" },
+  { src: "IMG_4636.jpg",           alt: "Butler Aikido 34 Montagemaschine" },
+  { src: "IMG_1989.jpg",           alt: "Porsche Panamera 3D Achsvermessung" },
+  { src: "IMG_1994.jpg",           alt: "3D Achsvermessung Werkstatt" },
+  { src: "IMG_4656.jpg",           alt: "Reifenlager Gebrauchtreifen" },
+  { src: "IMG_4658.jpg",           alt: "Reifenlager Einlagerung" },
+  { src: "20250903_155357.jpg",    alt: "Felge auf Auswuchtmaschine" },
+  { src: "20250903_155843.jpg",    alt: "Reifenmontage in Aktion" },
+  { src: "IMG_3805.jpg",           alt: "Reifen 295er auf Felge" },
+  { src: "20251029_171525.jpg",    alt: "Außenbereich Butler Profi" },
+  ...Array.from({ length: 42 }, (_, i) => ({
+    src: `photo-${String(i + 1).padStart(2, "0")}.jpg`,
+    alt: `Butler Werkstatt Foto ${String(i + 1).padStart(2, "0")}`
+  }))
 ];
-const galleryImages = newPhotos;
 
 /* ── DOM refs ───────────────────────────────────────────────────────────────── */
 const carouselTrack   = document.getElementById("carousel-track");
@@ -246,7 +255,7 @@ let intervalId;
 function renderCarousel() {
   carouselTrack.innerHTML = slides.map((slide) => `
     <article class="slide">
-      <img src="./${slide.folder || "assets"}/${slide.image}" alt="${slide.title}" loading="eager" />
+      <img src="assets/${slide.image}" alt="${slide.title}" loading="eager" />
       <div class="slide-caption">
         <strong>${slide.title}</strong>
         <span>${slide.text}</span>
@@ -333,7 +342,7 @@ function scrollGalleryTo(index) {
 function renderGallery() {
   gallerySlider.innerHTML = galleryImages.map((item) => `
     <div class="gallery-slide">
-      <img src="./${item.folder || "assets"}/${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
+      <img src="assets/${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
     </div>
   `).join("");
 
