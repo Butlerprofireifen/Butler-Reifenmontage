@@ -227,14 +227,7 @@ const newPhotos = [
   { src: "20250903_155843.jpg",    alt: "Reifenmontage in Aktion" },
   { src: "20251029_171516(1).jpg", alt: "KFZ-Service Schild Butler Profi" },
 ];
-
-const galleryImages = [
-  ...newPhotos,
-  ...Array.from({ length: 42 }, (_, i) => ({
-    src: `photo-${String(i + 1).padStart(2, "0")}.jpg`,
-    alt: `Butler Werkstatt Foto ${String(i + 1).padStart(2, "0")}`
-  }))
-];
+const galleryImages = newPhotos;
 
 /* ── DOM refs ───────────────────────────────────────────────────────────────── */
 const carouselTrack   = document.getElementById("carousel-track");
@@ -258,7 +251,7 @@ let intervalId;
 function renderCarousel() {
   carouselTrack.innerHTML = slides.map((slide) => `
     <article class="slide">
-      <img src="./assets/${slide.image}" alt="${slide.title}" loading="eager" />
+      <img src="./Archiv/${slide.image}" alt="${slide.title}" loading="eager" />
       <div class="slide-caption">
         <strong>${slide.title}</strong>
         <span>${slide.text}</span>
@@ -345,7 +338,7 @@ function scrollGalleryTo(index) {
 function renderGallery() {
   gallerySlider.innerHTML = galleryImages.map((item) => `
     <div class="gallery-slide">
-      <img src="./assets/${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
+      <img src="./Archiv/${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
     </div>
   `).join("");
 
