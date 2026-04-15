@@ -2,6 +2,7 @@ const translations = {
   de: {
     navServices: "Leistungen",
     navPrices: "Preise",
+    navShop: "Online Shop",
     navReviews: "Vorteile",
     navLocation: "Standort",
     eyebrow: "Premium-Service für Reifen & Felgen",
@@ -9,6 +10,7 @@ const translations = {
       "Mit modernster High-End-Technik und jahrzehntelanger Erfahrung bieten wir zuverlässigen, fairen und professionellen Service rund um Reifen und Felgen.",
     callBtn: "Jetzt anrufen",
     routeBtn: "Route starten",
+    whatsappBtn: "WhatsApp",
     stat1: "Montage von 10 bis 34 Zoll",
     stat2: "Runflat- & UHP-Service",
     stat3: "Mo–Fr 10–17 Uhr",
@@ -36,12 +38,12 @@ const translations = {
     service6Text: "Neue und gebrauchte Reifen und Felgen zu attraktiven Konditionen plus umweltgerechte Altreifenentsorgung.",
     service7Title: "Reifen- & Rädereinlagerung",
     service7Text: "Sichere und professionelle Einlagerung Ihrer Sommer- und Winterreifen in unserem Reifenlager.",
-    service8Title: "Öl- & Ölfilterwechsel",
-    service8Text: "Fachgerechter Motorölwechsel inkl. Ölfilterwechsel — schnell und zuverlässig für alle Fahrzeugtypen.",
+    service8Title: "Wartungs- und Servicearbeiten wie Öl- & Ölfilterwechsel",
+    service8Text: "Fachgerechte Inspektions- und Wartungsarbeiten, Prüfung von Betriebsflüssigkeiten, Austausch von Innenraum- und Luftfiltern, Batterien sowie weiteren Ersatzteilen auf Anfrage.",
     service9Title: "Klimaanlagen-Service",
     service9Text: "Befüllung, Prüfung und Wartung Ihrer Klimaanlage für angenehmes Fahren zu jeder Jahreszeit.",
     service10Title: "Felgen Verkauf & Alufelgen-Aufbereitung",
-    service10Text: "Verkauf von neuen und gebrauchten Felgen sowie professionelle Aufbereitung und Politur von Alufelgen — für ein makelloses Erscheinungsbild.",
+    service10Text: "Verkauf von neuen und gebrauchten Felgen sowie professionelle Aufbereitung und Instandsetzung von Alufelgen — für ein makelloses Erscheinungsbild.",
     pricesEyebrow: "Preisübersicht",
     pricesTitle: "Aktuelle Preise auf einen Blick",
     pricesText: "Alle Preise verstehen sich inklusive der gesetzlichen Mehrwertsteuer.",
@@ -53,6 +55,9 @@ const translations = {
     priceDemount: "Demontage ohne Montage",
     priceInternet: "Aufpreis für nicht bei uns gekaufte Reifen/Felgen",
     priceAlignment: "Achsvermessung",
+    priceStorage: "Rädereinlagerung",
+    priceClimate: "Klimaanlagenwartung",
+    priceOther: "Sonstige Service-Arbeiten",
     priceSet1: "Komplettradwechsel PKW",
     priceSet2: "Komplettradwechsel SUV",
     priceSet3: "PKW inkl. Auswuchten",
@@ -101,6 +106,7 @@ const translations = {
   en: {
     navServices: "Services",
     navPrices: "Prices",
+    navShop: "Online Shop",
     navReviews: "Benefits",
     navLocation: "Location",
     eyebrow: "Premium tire and wheel service",
@@ -108,6 +114,7 @@ const translations = {
       "With state-of-the-art high-end equipment and decades of experience, we provide reliable, fair and professional service for tires and wheels.",
     callBtn: "Call now",
     routeBtn: "Get directions",
+    whatsappBtn: "WhatsApp",
     stat1: "Fitting from 10 to 34 inches",
     stat2: "Runflat & UHP service",
     stat3: "Mon–Fri 10 am - 5 pm",
@@ -135,8 +142,8 @@ const translations = {
     service6Text: "Attractive conditions for new and used tires and wheels plus proper old-tire disposal.",
     service7Title: "Tire & wheel storage",
     service7Text: "Safe and professional storage of your summer and winter tires in our tire warehouse.",
-    service8Title: "Oil & oil filter change",
-    service8Text: "Professional engine oil change including oil filter — fast and reliable for all vehicle types.",
+    service8Title: "Maintenance & service work incl. oil & oil filter change",
+    service8Text: "Professional inspection and maintenance work, checking operating fluids, replacing cabin and air filters, batteries, and other spare parts on request.",
     service9Title: "Air conditioning service",
     service9Text: "Refilling, testing and maintenance of your air conditioning for comfortable driving in any season.",
     service10Title: "Wheel sales & alloy wheel restoration",
@@ -152,6 +159,9 @@ const translations = {
     priceDemount: "Demounting without fitting",
     priceInternet: "Surcharge for tires/wheels not bought from us",
     priceAlignment: "Wheel alignment",
+    priceStorage: "Wheel storage",
+    priceClimate: "Air conditioning service",
+    priceOther: "Other service work",
     priceSet1: "Seasonal change car",
     priceSet2: "Seasonal change SUV",
     priceSet3: "Car incl. balancing",
@@ -203,21 +213,18 @@ const translations = {
 const slides = [
   { image: "20250424_094202.jpg", title: "Außenansicht",   text: "Butler Profi Reifenmontage — Ihr Spezialist in Muggensturm" },
   { image: "IMG_1994.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte", position: "center 30%" },
+  { image: "photo-20.jpg",        title: "Achsvermessung", text: "John Bean 3D-Achsmessstand für präzise Fahrwerkswerte" },
   { image: "IMG_4643.jpg",        title: "Laserwuchten",   text: "Corghi Blue Light — Laser-Auswuchtung für perfekte Laufruhe" },
-  { image: "Aikido.jpeg",            title: "Butler Aikido 34",      text: "High-End-Montagemaschine für Reifen von 10 bis 34 Zoll" },
-  { image: "Airdraulic Combi.jpeg", title: "Airdraulic Combi",     text: "Professionelle Reifenmontage mit modernster Technik" },
   { image: "20250903_155843.jpg",   title: "Felgenschutz",          text: "Schonende Montage mit Felgenschutz — kein Kratzer, keine Beschädigung" },
   { image: "IMG_4329.jpg",        title: "Werkstatt",      text: "Moderne Werkstatt mit High-End-Technik" },
   { image: "IMG_4651.jpg",        title: "Büro & Empfang", text: "Moderner Empfangsbereich — Sie sind bei uns gut aufgehoben" },
-  { image: "IMG_4656.jpg",        title: "Gebrauchtreifen", text: "Große Auswahl an Gebrauchtreifen direkt aus dem Lager" },
+  { image: "2025678909876.jpg",   title: "Werkstatt",       text: "Professioneller Service rund um Reifen und Felgen" },
 ];
 
 /* ── Gallery images ─────────────────────────────────────────────────────────── */
 const galleryImages = [
   { src: "20250424_094202.jpg",    alt: "Butler Profi Reifenmontage Außenansicht" },
-  { src: "20250425_155347.jpg",    alt: "Butler Profi Reifenmontage mit Audi RS6" },
   { src: "20250425_155510.jpg",    alt: "Butler Profi Reifenmontage Einfahrt" },
-  { src: "20250903_171416.jpg",    alt: "Mercedes mit BBS Felgen vor der Werkstatt" },
   { src: "20250903_171408.jpg",    alt: "Mercedes BBS Felgen Nahaufnahme" },
   { src: "IMG_4329.jpg",           alt: "Werkstatt Innenansicht" },
   { src: "IMG_4651.jpg",           alt: "Büro und Empfangsbereich" },
@@ -225,18 +232,14 @@ const galleryImages = [
   { src: "IMG_4643.jpg",           alt: "Corghi Blue Light Laserwuchten" },
   { src: "IMG_4640.jpg",           alt: "Corghi Blue Light Auswuchtmaschine" },
   { src: "IMG_4636.jpg",           alt: "Butler Aikido 34 Montagemaschine" },
-  { src: "IMG_1989.jpg",           alt: "Porsche Panamera 3D Achsvermessung" },
   { src: "IMG_1994.jpg",           alt: "3D Achsvermessung Werkstatt" },
-  { src: "IMG_4656.jpg",           alt: "Reifenlager Gebrauchtreifen" },
   { src: "IMG_4658.jpg",           alt: "Reifenlager Einlagerung" },
   { src: "20250903_155357.jpg",    alt: "Felge auf Auswuchtmaschine" },
   { src: "20250903_155843.jpg",    alt: "Reifenmontage in Aktion" },
   { src: "IMG_3805.jpg",           alt: "Reifen 295er auf Felge" },
   { src: "20251029_171525.jpg",    alt: "Außenbereich Butler Profi" },
-  ...Array.from({ length: 42 }, (_, i) => ({
-    src: `photo-${String(i + 1).padStart(2, "0")}.jpg`,
-    alt: `Butler Werkstatt Foto ${String(i + 1).padStart(2, "0")}`
-  }))
+  { src: "2025678909876.jpg",      alt: "Butler Profi Werkstatt" },
+  { src: "img_4659.jpg",           alt: "Butler Profi Reifenservice" },
 ];
 
 /* ── DOM refs ───────────────────────────────────────────────────────────────── */
@@ -261,7 +264,7 @@ let intervalId;
 function renderCarousel() {
   carouselTrack.innerHTML = slides.map((slide) => `
     <article class="slide">
-      <img src="assets/${slide.image}" alt="${slide.title}" loading="eager" style="${slide.position ? `object-position:${slide.position}` : ''}" />
+      <img src="Archiv/${slide.image}" alt="${slide.title}" loading="eager" style="${slide.position ? `object-position:${slide.position}` : ''}" />
       <div class="slide-caption">
         <strong>${slide.title}</strong>
         <span>${slide.text}</span>
@@ -348,7 +351,7 @@ function scrollGalleryTo(index) {
 function renderGallery() {
   gallerySlider.innerHTML = galleryImages.map((item) => `
     <div class="gallery-slide">
-      <img src="assets/${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
+      <img src="Archiv/${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
     </div>
   `).join("");
 
