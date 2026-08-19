@@ -1627,7 +1627,7 @@ h1 em {
   .feature-strip { grid-template-columns: repeat(2, 1fr); }
 
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
-  .benefits-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pricing-grid { grid-template-columns: repeat(2, 1fr); }
   .review-top { grid-template-columns: repeat(3, 1fr); }
   .review-cards { grid-template-columns: repeat(2, 1fr); }
@@ -1648,6 +1648,7 @@ h1 em {
   .hero-stats span { font-size: .7rem; }
 
   .cards-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   .review-top { grid-template-columns: 1fr; }
   .review-cards { grid-template-columns: 1fr; }
