@@ -261,7 +261,6 @@ const slides = [
 
 /* ── Gallery images ─────────────────────────────────────────────────────────── */
 const galleryImages = [
-  { src: "20250424_094202.jpg",    alt: "Butler Profi Reifenmontage Außenansicht" },
   { src: "20250425_155510.jpg",    alt: "Butler Profi Reifenmontage Einfahrt" },
   { src: "20250903_171408.jpg",    alt: "Mercedes BBS Felgen Nahaufnahme" },
   { src: "IMG_4329.jpg",           alt: "Werkstatt Innenansicht" },
