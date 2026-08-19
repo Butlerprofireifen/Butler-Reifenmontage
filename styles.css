@@ -578,14 +578,16 @@ h1 em {
   object-position: center;
 }
 
-.benefit-media--split > img:first-child { left: 0; }
+.benefit-media--split > img:first-child {
+  left: 0;
+  transform-origin: right center;
+}
 .benefit-media--split > img:last-of-type {
   right: 0;
   object-position: center 58%;
+  transform-origin: left center;
   border-left: 1px solid rgba(255, 255, 255, .14);
 }
-
-.benefit-card--lounge:hover .benefit-media > img { transform: none; }
 
 .benefit-badge {
   position: absolute;
